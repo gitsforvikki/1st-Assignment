@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+
+        }
+        header{
+
+
+            background-image: url("img/image3.jpeg");
+            text-align: center;
+            text-shadow: 5px 5px yellow;
+            font-weight: bolder;
+            font-size: 40px;
+            padding: 40px;
+            color: #603427;
+            font-family: "Comic Sans MS", sans-serif;
+
+        }
+        footer{
+            background: linear-gradient(45deg,red,black);
+            color:white;
+            font-size: 20px;
+            font-family: "Comic Sans MS", sans-serif;
+            text-align: center;
+            padding: 10px;
+
+        }
+        nav{
+            background: linear-gradient(45deg,aqua,#28a745);
+            padding: 10px;
+            position: sticky;
+            top: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px black;
+            clear: both;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-block;
+            font-family: "Comic Sans MS", sans-serif;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+
+        }
+         nav a:hover{
+            background: linear-gradient(45deg,red,black);
+
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown_list{
+            display: none;
+            position: absolute;
+            background: linear-gradient(45deg,aqua,#66bb6a);
+            width: 150px;
+            padding: 10px;
+
+
+        }
+        .dropdown_list a{
+            display: block;
+            border-radius: 20px;
+        }
+        /* for dropdown effect */
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+        .mainContent{
+            font-size: 20px;
+            word-spacing: 10px;
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: rgba(0 0 0 0.5);
+        }
+        .section_1{
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            color: #603427;
+            font-size: 30px;
+        }
+        footer{
+            position: static;
+            width: 100%;
+            bottom: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1>FIRST ASSIGNMENT ON WEB TECHNOLOGY</h1>
+        <h3 style="float: right">submited to :-Dr.vikas singla</h3>
+    </header>
+
+    <!-- Dropdown Navbar -->
+    <nav>
+        <a href="10_CSS_Tables.html">Students</a>
+        <a href="21_Image_Gallery.html">Gallery</a>
+        <a href="food_page.html">Foods</a>
+        <a href="greatindia1.html">The Great India</a>
+        <div class="dropdown">
+            <a href="#">Courses</a>
+            <div class="dropdown_list">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">JQuery</a>
+                <a href="#">Bootstrap</a>
+            </div>
+        </div>
+        <a href="28_CSS_Contact_Form.html">Registere here</a>
+    </nav>
+       <section class="mainContent">
+           <h1 class="section_1"><ins>welcome to our page</ins></h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo nulla numquam repellendus soluta. A adipisci aliquam corporis, cum deserunt dicta eius facere id impedit ipsa minus molestias nam nihil numquam quaerat quis recusandae sequi ullam vero, vitae! Alias autem dolorum eos eum iure magni, nam nihil, nobis perspiciatis porro possimus quam temporibus vel! Ab accusamus dicta dolorum error harum illo ipsum magnam maxime porro possimus quaerat quam quod ratione rem rerum tempora tempore, tenetur ut veritatis vero voluptas voluptatibus?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus illum ipsam iste minima possimus quas qui quibusdam sequi suscipit? Aliquam aperiam architecto aspernatur delectus dolorem earum exercitationem expedita explicabo laboriosam laudantium optio, porro quam qui sint soluta? Accusamus ex id incidunt libero nisi pariatur quisquam velit. Ab aspernatur blanditiis commodi dicta distinctio dolor dolorem dolores doloribus eius ex explicabo magni maxime nam, obcaecati officiis optio perspiciatis quam repellendus tempore totam ut, voluptate voluptates? Aut cumque facere laudantium nulla voluptatum. Accusamus autem distinctio esse, est ipsum iure nam praesentium quidem vitae voluptatum. A adipisci consectetur dolores, eaque earum, excepturi explicabo facilis illum iure iusto modi natus perferendis, qui quibusdam reprehenderit repudiandae saepe sapiente suscipit tenetur totam ullam unde vero voluptatem!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo nulla numquam repellendus soluta. A adipisci aliquam corporis, cum deserunt dicta eius facere id impedit ipsa minus molestias nam nihil numquam quaerat quis recusandae sequi ullam vero, vitae! Alias autem dolorum eos eum iure magni, nam nihil, nobis perspiciatis porro possimus quam temporibus vel! Ab accusamus dicta dolorum error harum illo ipsum magnam maxime porro possimus quaerat quam quod ratione rem rerum tempora tempore, tenetur ut veritatis vero voluptas voluptatibus?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus illum ipsam iste minima possimus quas qui quibusdam sequi suscipit? Aliquam aperiam architecto aspernatur delectus dolorem earum exercitationem expedita explicabo laboriosam laudantium optio, porro quam qui sint soluta? Accusamus ex id incidunt libero nisi pariatur quisquam velit. Ab aspernatur blanditiis commodi dicta distinctio dolor dolorem dolores doloribus eius ex explicabo magni maxime nam, obcaecati officiis optio perspiciatis quam repellendus tempore totam ut, voluptate voluptates? Aut cumque facere laudantium nulla voluptatum. Accusamus autem distinctio esse, est ipsum iure nam praesentium quidem vitae voluptatum. A adipisci consectetur dolores, eaque earum, excepturi explicabo facilis illum iure iusto modi natus perferendis, qui quibusdam reprehenderit repudiandae saepe sapiente suscipit tenetur totam ullam unde vero voluptatem!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo nulla numquam repellendus soluta. A adipisci aliquam corporis, cum deserunt dicta eius facere id impedit ipsa minus molestias nam nihil numquam quaerat quis recusandae sequi ullam vero, vitae! Alias autem dolorum eos eum iure magni, nam nihil, nobis perspiciatis porro possimus quam temporibus vel! Ab accusamus dicta dolorum error harum illo ipsum magnam maxime porro possimus quaerat quam quod ratione rem rerum tempora tempore, tenetur ut veritatis vero voluptas voluptatibus?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus illum ipsam iste minima possimus quas qui quibusdam sequi suscipit? Aliquam aperiam architecto aspernatur delectus dolorem earum exercitationem expedita explicabo laboriosam laudantium optio, porro quam qui sint soluta? Accusamus ex id incidunt libero nisi pariatur quisquam velit. Ab aspernatur blanditiis commodi dicta distinctio dolor dolorem dolores doloribus eius ex explicabo magni maxime nam, obcaecati officiis optio perspiciatis quam repellendus tempore totam ut, voluptate voluptates? Aut cumque facere laudantium nulla voluptatum. Accusamus autem distinctio esse, est ipsum iure nam praesentium quidem vitae voluptatum. A adipisci consectetur dolores, eaque earum, excepturi explicabo facilis illum iure iusto modi natus perferendis, qui quibusdam reprehenderit repudiandae saepe sapiente suscipit tenetur totam ullam unde vero voluptatem!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo nulla numquam repellendus soluta. A adipisci aliquam corporis, cum deserunt dicta eius facere id impedit ipsa minus molestias nam nihil numquam quaerat quis recusandae sequi ullam vero, vitae! Alias autem dolorum eos eum iure magni, nam nihil, nobis perspiciatis porro possimus quam temporibus vel! Ab accusamus dicta dolorum error harum illo ipsum magnam maxime porro possimus quaerat quam quod ratione rem rerum tempora tempore, tenetur ut veritatis vero voluptas voluptatibus?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus illum ipsam iste minima possimus quas qui quibusdam sequi suscipit? Aliquam aperiam architecto aspernatur delectus dolorem earum exercitationem expedita explicabo laboriosam laudantium optio, porro quam qui sint soluta? Accusamus ex id incidunt libero nisi pariatur quisquam velit. Ab aspernatur blanditiis commodi dicta distinctio dolor dolorem dolores doloribus eius ex explicabo magni maxime nam, obcaecati officiis optio perspiciatis quam repellendus tempore totam ut, voluptate voluptates? Aut cumque facere laudantium nulla voluptatum. Accusamus autem distinctio esse, est ipsum iure nam praesentium quidem vitae voluptatum. A adipisci consectetur dolores, eaque earum, excepturi explicabo facilis illum iure iusto modi natus perferendis, qui quibusdam reprehenderit repudiandae saepe sapiente suscipit tenetur totam ullam unde vero voluptatem!</p>
+
+           <!-- Main Footer -->
+           <footer class="p-3 text-white bg-dark text-center">
+               <div class="container">
+                   <div class="row">
+                       <div class="col">
+                           <h3>Copyright &copy; 2019 , Ninja developer</h3>
+                           <h6>All Rights Reserved</h6>
+                           <h6>Developed & Maintained by
+                               <a class="text-warning" href="https://github.com/gitsforvikki" target="_blank">
+                                   <i class="fa fa-snowflake"></i> Ninja developer
+                               </a>
+                           </h6>
+                       </div>
+                   </div>
+               </div>
+           </footer
+
+</body>
+</html>
