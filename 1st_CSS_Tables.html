@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        tr:nth-child(even){
+            background-color: #00b0ff;
+        }
+        tr:nth-child(odd){
+            background-color: #00c851;
+        }
+        table{
+            width: 100%;
+        }
+        table,th,td{
+            border: none;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        th{
+            background-color: darkred;
+            color: white;
+        }
+        th ,td{
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        td:hover{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+
+        }
+        h1{
+            text-shadow: 0 0 10px darkred;
+            font-family: "Comic Sans MS", sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Attendance</h1>
+
+    <!-- CUSTOM TABLE -->
+    <table>
+        <tr>
+            <th>Sno.</th>
+            <th>Student Name</th>
+            <th>Roll number</th>
+            <th>Lecture attend</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dheeraj kr.jha</td>
+            <td>701</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mohit dhamija</td>
+            <td>702</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rahul  kumar</td>
+            <td>703</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Vikash kumar</td>
+            <td>704</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Ayush mishra</td>
+            <td>705</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Kuldeep singh</td>
+            <td>706</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+</body>
+</html>

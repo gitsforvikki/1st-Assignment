@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        body{
+            margin-bottom: 200px;
+            background-image:url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        }
+
+        header{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        .header{
+            text-align: center
+        }
+
+        table{
+            margin: auto;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            border: 3px solid white;
+            box-shadow: 0 0 20px black;
+            border-radius: 10px;
+        }
+        .header{
+            margin: auto;
+            color: white;
+            font-size: 30px;
+        }
+        .name{
+            text-align: left;
+        }
+        .p{
+
+        }
+        .input{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!--header-->
+    <header class="header">
+        <h1><i>SCHOOL ADMISSION FORM</i></h1>
+        <P class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis eius enim ex laborum maiores minima nam omnis totam vero.</P>
+    </header>
+
+
+    <!--section-->
+
+<section>
+    <table>
+
+            <tr>
+                <td ><label>your name</label></td>
+                <td ><input type="text" placeholder="first name"></td>
+                <td><input type="text" placeholder="second name"></td>
+            </tr>
+
+
+        <tr>
+            <td><label>class you want to apply for</label></td>
+            <td>
+                        <select>
+                            <option>1th</option>
+                            <option>2th</option>
+                            <option>3th</option>
+                            <option>4th</option>
+                            <option>5th</option>
+                        </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>student's birth date</label></td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td><label>parents name</label></td>
+            <td><input type="text" placeholder="first name"></td>
+            <td><input type="text" placeholder="second name"></td>
+        </tr>
+        <tr>
+            <td><label>mobile number</label></td>
+            <td><input type="number" min="1000000000" max="9999999999" required></td>
+        </tr>
+        <tr>
+            <td><label>email id</label></td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td><label>select gender</label></td>
+            <td><input type="radio"  value="male" name="gender">male</td>
+            <td><input type="radio"  value="female" name="gender">female</td>
+            <td><input type="radio"  value="others" name="gender">others</td>
+
+        </tr>
+
+        <tr>
+            <td><label>Address:-</label></td>
+        </tr>
+        <tr>
+            <td><label>village/town</label></td>
+            <td><input type="text" placeholder="Gopalganj"></td>
+        </tr>
+        <tr>
+            <td><label>state</label></td>
+            <td><input type="text" placeholder="Bihar"></td>
+        </tr>
+        <tr>
+            <td><label>country</label></td>
+            <td><input type="text" placeholder="India"></td>
+        </tr>
+
+        <tr>
+            <td><label>PIN CODE</label></td>
+            <td><input type="number" placeholder="841436"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" placeholder="email id">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>digital signature</label>
+            </td>
+            <td>
+                <textarea rows="2" cols="20"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>        </label>
+            </td>
+            <td>
+                <input type="submit" value="submit">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+</body>
+
+</html>
